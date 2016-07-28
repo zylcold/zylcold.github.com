@@ -1,11 +1,9 @@
 ---
-layout: post
-title: "Hello World"
-description: ""
-category: 
-tags: [init]
+layout: page
 ---
 {% include JB/setup %}
 
-
-## Hello World
+<ul class="content">
+ 	{% assign posts_collate = site.posts %}
+ 	{% include JB/posts_collate %}
+</ul>
